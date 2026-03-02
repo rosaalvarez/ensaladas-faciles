@@ -34,3 +34,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+Transforme*.pdf
+pdf-recipes-raw.txt
