@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { recipes, getRecipeBySlug } from '@/data/recipes';
 import { getCountry, getIngredientName, addToShoppingList } from '@/lib/store';
 import { getCountryByCode } from '@/data/countries';
+import { isPremium } from '@/lib/premium';
 import Link from 'next/link';
 import RecipeCard from '@/components/RecipeCard';
 
@@ -21,9 +22,14 @@ export default function RecipeDetail() {
   const [checkedIngredients, setCheckedIngredients] = useState<Set<number>>(new Set());
   const [added, setAdded] = useState(false);
   const [servingsMultiplier, setServingsMultiplier] = useState(1);
+  const [premium, setPremium] = useState(false);
 
   useEffect(() => {
     setCountry(getCountry());
+    setPremium(isPremium());
+    const handler = () => setPremium(isPremium());
+    window.addEventListener('nutre-premium-change', handler);
+    return () => window.removeEventListener('nutre-premium-change', handler);
   }, []);
 
   const relatedRecipes = useMemo(() => {
@@ -42,7 +48,7 @@ export default function RecipeDetail() {
     );
   }
 
-  const locked = !recipe.free;
+  const locked = !recipe.free && !premium;
   const recipeCountry = recipe.country ? getCountryByCode(recipe.country) : null;
   const currentServings = recipe.servings * servingsMultiplier;
 
@@ -260,7 +266,7 @@ export default function RecipeDetail() {
             <span className="text-5xl mb-4 block">🔒</span>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Esta receta es premium</h3>
             <p className="text-gray-600 mb-6">Desbloquea todas las recetas y accede a ingredientes completos y todos los pasos.</p>
-            <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
+            <a href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=57242186-e84ed0a8-c17f-47ed-b6df-323c439e9481" target="_blank" rel="noopener" className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
               Desbloquear por $29,900 COP →
             </a>
             <p className="text-xs text-gray-400 mt-4">Pago único • Acceso permanente • 50,000+ usuarios</p>

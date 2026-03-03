@@ -142,7 +142,7 @@ export default function RecetasPage() {
       <div className="mt-16 text-center bg-gradient-to-r from-green-50 to-emerald-100 rounded-2xl p-8 md:p-12">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">🔒 Desbloquea todas las recetas</h2>
         <p className="text-gray-600 mb-6 max-w-md mx-auto">Accede a más de 287 ensaladas premium con ingredientes adaptados a tu país.</p>
-        <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
+        <a href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=57242186-e84ed0a8-c17f-47ed-b6df-323c439e9481" target="_blank" rel="noopener" className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
           Desbloquear por $29,900 COP →
         </a>
         <p className="text-xs text-gray-400 mt-4">Pago único • Acceso de por vida • 50,000+ usuarios satisfechos</p>

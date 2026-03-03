@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 import { countries } from '@/data/countries';
 import { getCountry, setCountry as saveCountry } from '@/lib/store';
+import { isPremium, setPremiumCode, PAYMENT_URL } from '@/lib/premium';
+import { validateAccessCode } from '@/lib/supabase';
 
 const LeafLogo = () => (
   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,10 +17,19 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [countryOpen, setCountryOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState('CO');
+  const [premium, setPremium] = useState(false);
+  const [showCodeModal, setShowCodeModal] = useState(false);
+  const [codeInput, setCodeInput] = useState('');
+  const [codeError, setCodeError] = useState('');
+  const [validating, setValidating] = useState(false);
   const countryRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setSelectedCountry(getCountry());
+    setPremium(isPremium());
+    const handler = () => setPremium(isPremium());
+    window.addEventListener('nutre-premium-change', handler);
+    return () => window.removeEventListener('nutre-premium-change', handler);
   }, []);
 
   useEffect(() => {
@@ -34,9 +45,25 @@ export default function Navbar() {
   const handleCountrySelect = (code: string) => {
     setSelectedCountry(code);
     saveCountry(code);
-    // Dispatch custom event so other components can react
     window.dispatchEvent(new CustomEvent('nutre-country-change', { detail: code }));
     setCountryOpen(false);
+  };
+
+  const handleCodeSubmit = async () => {
+    const trimmed = codeInput.trim().toUpperCase();
+    if (!trimmed) return;
+    setValidating(true);
+    setCodeError('');
+    const valid = await validateAccessCode(trimmed);
+    if (valid) {
+      setPremiumCode(trimmed);
+      setPremium(true);
+      setShowCodeModal(false);
+      setCodeInput('');
+    } else {
+      setCodeError('Código no válido. Verifica e intenta de nuevo.');
+    }
+    setValidating(false);
   };
 
   const currentCountry = countries.find(c => c.code === selectedCountry) || countries[0];
@@ -48,94 +75,147 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-100 shadow-sm">
-      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <LeafLogo />
-          <span className="text-xl font-bold text-[#2D8C4E]">Nutre</span>
-        </Link>
+    <>
+      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-100 shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2">
+            <LeafLogo />
+            <span className="text-xl font-bold text-[#2D8C4E]">Nutre</span>
+          </Link>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
-          {navLinks.map(link => (
-            <Link key={link.href} href={link.href} className="hover:text-[#2D8C4E] transition">
-              {link.label}
-            </Link>
-          ))}
+          {/* Desktop */}
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+            {navLinks.map(link => (
+              <Link key={link.href} href={link.href} className="hover:text-[#2D8C4E] transition">
+                {link.label}
+              </Link>
+            ))}
 
-          {/* Country selector */}
-          <div ref={countryRef} className="relative">
-            <button
-              onClick={() => setCountryOpen(!countryOpen)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 hover:border-[#2D8C4E] transition text-sm"
-            >
-              <span className="text-lg">{currentCountry.flag}</span>
-              <span className="hidden lg:inline">{currentCountry.name}</span>
-              <svg className={`w-3.5 h-3.5 transition-transform ${countryOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {countryOpen && (
-              <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 max-h-80 overflow-y-auto">
-                {countries.map(c => (
-                  <button
-                    key={c.code}
-                    onClick={() => handleCountrySelect(c.code)}
-                    className={`w-full text-left px-4 py-2 flex items-center gap-3 hover:bg-green-50 transition text-sm ${c.code === selectedCountry ? 'bg-green-50 text-[#2D8C4E] font-semibold' : 'text-gray-700'}`}
-                  >
-                    <span className="text-lg">{c.flag}</span>
-                    <span>{c.name}</span>
-                  </button>
-                ))}
+            {/* Country selector */}
+            <div ref={countryRef} className="relative">
+              <button
+                onClick={() => setCountryOpen(!countryOpen)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 hover:border-[#2D8C4E] transition text-sm"
+              >
+                <span className="text-lg">{currentCountry.flag}</span>
+                <span className="hidden lg:inline">{currentCountry.name}</span>
+                <svg className={`w-3.5 h-3.5 transition-transform ${countryOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {countryOpen && (
+                <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 max-h-80 overflow-y-auto">
+                  {countries.map(c => (
+                    <button
+                      key={c.code}
+                      onClick={() => handleCountrySelect(c.code)}
+                      className={`w-full text-left px-4 py-2 flex items-center gap-3 hover:bg-green-50 transition text-sm ${c.code === selectedCountry ? 'bg-green-50 text-[#2D8C4E] font-semibold' : 'text-gray-700'}`}
+                    >
+                      <span className="text-lg">{c.flag}</span>
+                      <span>{c.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {premium ? (
+              <span className="bg-green-100 text-[#2D8C4E] px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-1">
+                ✅ Premium
+              </span>
+            ) : (
+              <div className="flex items-center gap-2">
+                <button onClick={() => setShowCodeModal(true)} className="text-[#2D8C4E] hover:underline text-sm">
+                  Ingresar código
+                </button>
+                <a href={PAYMENT_URL} className="bg-[#2D8C4E] text-white px-5 py-2 rounded-full hover:bg-[#246E3E] transition font-semibold">
+                  Desbloquear Todo
+                </a>
               </div>
             )}
           </div>
 
-          <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="bg-[#2D8C4E] text-white px-5 py-2 rounded-full hover:bg-[#246E3E] transition font-semibold">
-            Desbloquear Todo
-          </a>
+          {/* Mobile hamburger */}
+          <button onClick={() => setOpen(!open)} className="md:hidden p-2" aria-label="Menú">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {open
+                ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />}
+            </svg>
+          </button>
         </div>
 
-        {/* Mobile hamburger */}
-        <button onClick={() => setOpen(!open)} className="md:hidden p-2" aria-label="Menú">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {open
-              ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />}
-          </svg>
-        </button>
-      </div>
+        {/* Mobile menu */}
+        {open && (
+          <div className="md:hidden bg-white border-t px-4 py-4 space-y-3 shadow-lg">
+            {navLinks.map(link => (
+              <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className="block text-gray-700 hover:text-[#2D8C4E] font-medium py-1">
+                {link.label}
+              </Link>
+            ))}
 
-      {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden bg-white border-t px-4 py-4 space-y-3 shadow-lg">
-          {navLinks.map(link => (
-            <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className="block text-gray-700 hover:text-[#2D8C4E] font-medium py-1">
-              {link.label}
-            </Link>
-          ))}
-
-          {/* Country selector mobile */}
-          <div className="pt-2 border-t border-gray-100">
-            <p className="text-xs text-gray-400 mb-2">🌎 Tu país</p>
-            <div className="grid grid-cols-3 gap-2 max-h-40 overflow-y-auto">
-              {countries.map(c => (
-                <button
-                  key={c.code}
-                  onClick={() => { handleCountrySelect(c.code); setOpen(false); }}
-                  className={`text-left px-2 py-1.5 rounded-lg text-xs flex items-center gap-1 ${c.code === selectedCountry ? 'bg-green-50 text-[#2D8C4E] font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}
-                >
-                  <span>{c.flag}</span> {c.name}
-                </button>
-              ))}
+            {/* Country selector mobile */}
+            <div className="pt-2 border-t border-gray-100">
+              <p className="text-xs text-gray-400 mb-2">🌎 Tu país</p>
+              <div className="grid grid-cols-3 gap-2 max-h-40 overflow-y-auto">
+                {countries.map(c => (
+                  <button
+                    key={c.code}
+                    onClick={() => { handleCountrySelect(c.code); setOpen(false); }}
+                    className={`text-left px-2 py-1.5 rounded-lg text-xs flex items-center gap-1 ${c.code === selectedCountry ? 'bg-green-50 text-[#2D8C4E] font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}
+                  >
+                    <span>{c.flag}</span> {c.name}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" onClick={() => setOpen(false)} className="block bg-[#2D8C4E] text-white px-4 py-3 rounded-full text-center font-semibold hover:bg-[#246E3E]">
-            Desbloquear Todo
-          </a>
+            {premium ? (
+              <div className="bg-green-100 text-[#2D8C4E] px-4 py-3 rounded-full text-center font-semibold">
+                ✅ Premium activo
+              </div>
+            ) : (
+              <>
+                <button onClick={() => { setShowCodeModal(true); setOpen(false); }} className="block w-full text-center text-[#2D8C4E] font-medium py-2 border border-[#2D8C4E] rounded-full">
+                  Ingresar código
+                </button>
+                <a href={PAYMENT_URL} onClick={() => setOpen(false)} className="block bg-[#2D8C4E] text-white px-4 py-3 rounded-full text-center font-semibold hover:bg-[#246E3E]">
+                  Desbloquear Todo
+                </a>
+              </>
+            )}
+          </div>
+        )}
+      </nav>
+
+      {/* Code entry modal */}
+      {showCodeModal && (
+        <div className="fixed inset-0 z-[100] bg-black/50 flex items-center justify-center p-4" onClick={() => setShowCodeModal(false)}>
+          <div className="bg-white rounded-2xl p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Ingresar código de acceso</h3>
+            <p className="text-sm text-gray-500 mb-4">Ingresa el código que recibiste después de tu compra.</p>
+            <input
+              type="text"
+              value={codeInput}
+              onChange={e => setCodeInput(e.target.value.toUpperCase())}
+              placeholder="NUTRE-XXXXXX"
+              className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-center font-mono text-lg tracking-wider focus:border-[#2D8C4E] focus:outline-none mb-3"
+              onKeyDown={e => e.key === 'Enter' && handleCodeSubmit()}
+            />
+            {codeError && <p className="text-red-500 text-sm mb-3">{codeError}</p>}
+            <button
+              onClick={handleCodeSubmit}
+              disabled={validating}
+              className="w-full bg-[#2D8C4E] text-white py-3 rounded-full font-semibold hover:bg-[#246E3E] transition disabled:opacity-50"
+            >
+              {validating ? 'Verificando...' : 'Validar código'}
+            </button>
+            <button onClick={() => setShowCodeModal(false)} className="w-full text-gray-400 text-sm mt-3 hover:text-gray-600">
+              Cancelar
+            </button>
+          </div>
         </div>
       )}
-    </nav>
+    </>
   );
 }

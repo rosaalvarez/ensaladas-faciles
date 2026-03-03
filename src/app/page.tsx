@@ -28,7 +28,7 @@ export default function Home() {
                 <Link href="/recetas" className="bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200 text-center">
                   Ver Recetas Gratis →
                 </Link>
-                <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="border-2 border-[#2D8C4E] text-[#2D8C4E] px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-50 transition text-center">
+                <a href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=57242186-e84ed0a8-c17f-47ed-b6df-323c439e9481" target="_blank" rel="noopener" className="border-2 border-[#2D8C4E] text-[#2D8C4E] px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-50 transition text-center">
                   Desbloquear Todas 🔓
                 </a>
               </div>
@@ -290,7 +290,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="block text-center bg-[#2D8C4E] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
+              <a href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=57242186-e84ed0a8-c17f-47ed-b6df-323c439e9481" target="_blank" rel="noopener" className="block text-center bg-[#2D8C4E] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
                 Desbloquear todo →
               </a>
             </div>
@@ -307,7 +307,7 @@ export default function Home() {
             <Link href="/recetas" className="bg-white text-[#2D8C4E] px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-50 transition transform hover:scale-105">
               Explorar Recetas Gratis
             </Link>
-            <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition">
+            <a href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=57242186-e84ed0a8-c17f-47ed-b6df-323c439e9481" target="_blank" rel="noopener" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition">
               Desbloquear Todo por $29,900 COP
             </a>
           </div>

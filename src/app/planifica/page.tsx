@@ -18,7 +18,7 @@ export default function PlanificaPage() {
           ))}
         </div>
       </div>
-      <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition">
+      <a href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=57242186-e84ed0a8-c17f-47ed-b6df-323c439e9481" target="_blank" rel="noopener" className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition">
         Desbloquear por $29,900 COP →
       </a>
       <p className="text-xs text-gray-400 mt-4">Pago único • Acceso de por vida</p>

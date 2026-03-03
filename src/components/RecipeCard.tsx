@@ -1,7 +1,9 @@
 'use client';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import type { Recipe } from '@/data/recipes';
 import { getCountryByCode } from '@/data/countries';
+import { isPremium } from '@/lib/premium';
 
 const difficultyColors: Record<string, string> = {
   'Fácil': 'bg-green-100 text-green-700',
@@ -10,7 +12,14 @@ const difficultyColors: Record<string, string> = {
 };
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
-  const locked = !recipe.free;
+  const [premium, setPremium] = useState(false);
+  useEffect(() => {
+    setPremium(isPremium());
+    const handler = () => setPremium(isPremium());
+    window.addEventListener('nutre-premium-change', handler);
+    return () => window.removeEventListener('nutre-premium-change', handler);
+  }, []);
+  const locked = !recipe.free && !premium;
   const country = recipe.country ? getCountryByCode(recipe.country) : null;
 
   return (
