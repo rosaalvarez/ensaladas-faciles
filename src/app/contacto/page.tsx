@@ -10,14 +10,15 @@ export default function ContactoPage() {
             Estamos aquí para ayudarte. Escríbenos y te responderemos lo antes posible.
           </p>
           <a 
-            href="mailto:hola@ensaladasfaciles.online" 
+            href="mailto:hola@versalab.pro" 
             className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200"
           >
-            📧 hola@ensaladasfaciles.online
+            📧 hola@versalab.pro
           </a>
           <div className="mt-8 space-y-3 text-sm text-gray-500">
             <p>📍 Bogotá, Colombia</p>
             <p>⏰ Respondemos en menos de 24 horas (días hábiles)</p>
+            <p className="text-gray-400 mt-2">Nutre es un producto de <a href="https://versalab.pro" className="text-[#2D8C4E] underline" target="_blank" rel="noopener noreferrer">VersaLab</a></p>
           </div>
         </div>
 
@@ -25,8 +26,8 @@ export default function ContactoPage() {
           <h3 className="font-bold text-gray-900 mb-4">Preguntas frecuentes</h3>
           <div className="space-y-4">
             {[
-              { q: '¿Cómo accedo al contenido premium después de pagar?', a: 'Después de completar el pago en MercadoPago, recibirás un correo con las instrucciones de acceso. Si tienes problemas, escríbenos.' },
-              { q: '¿Puedo pedir reembolso?', a: 'Sí, tienes 7 días después de la compra para solicitar un reembolso completo.' },
+              { q: '¿Cómo accedo al contenido premium después de pagar?', a: 'Después de completar el pago en MercadoPago, recibirás un correo con las instrucciones de acceso. Si tienes problemas, escríbenos a hola@versalab.pro.' },
+              { q: '¿Puedo pedir reembolso?', a: 'Sí, tienes 7 días después de la compra para solicitar un reembolso completo escribiendo a hola@versalab.pro.' },
               { q: '¿Las recetas se actualizan?', a: 'Sí, agregamos nuevas recetas cada mes. Con el pago único tienes acceso a todas las actualizaciones futuras.' },
               { q: '¿Funciona en mi celular?', a: 'Sí, Nutre es una PWA (Progressive Web App). Puedes instalarla en tu celular y usarla incluso sin internet.' },
             ].map((faq, i) => (
