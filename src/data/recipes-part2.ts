@@ -11,7 +11,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-rusa-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'ninos', 'adultos-mayores'],
     free: true,
     ingredients: [
@@ -37,7 +37,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-criolla-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: true,
     ingredients: [
@@ -63,7 +63,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 35,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-lentejas-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -90,7 +90,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-choclo-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'sin-gluten', 'rapida', 'ninos'],
     free: false,
     ingredients: [
@@ -116,7 +116,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 40,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-remolacha-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -141,7 +141,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-zapallito-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -166,7 +166,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 45,
     servings: 6,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-porotos-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -192,7 +192,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 2,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-palta-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'colesterol'],
     free: false,
     ingredients: [
@@ -217,7 +217,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-arroz-uruguaya.webp',
     tags: ['uruguay', 'UY', 'sin-gluten', 'ninos'],
     free: false,
     ingredients: [
@@ -243,7 +243,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-repollo-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -268,7 +268,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-papines-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten'],
     free: false,
     ingredients: [
@@ -293,7 +293,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 35,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-calabaza-uruguaya.webp',
     tags: ['uruguay', 'UY', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'digestion'],
     free: false,
     ingredients: [
@@ -322,7 +322,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 45,
     servings: 8,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-gallina-venezolana.webp',
     tags: ['venezuela', 'VE', 'ninos', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -349,7 +349,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-aguacate-venezolana.webp',
     tags: ['venezuela', 'VE', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'colesterol'],
     free: false,
     ingredients: [
@@ -374,7 +374,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-repollo-venezolana.webp',
     tags: ['venezuela', 'VE', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -399,7 +399,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 40,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-caraotas-venezolana.webp',
     tags: ['venezuela', 'VE', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -425,7 +425,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-palmito-venezolana.webp',
     tags: ['venezuela', 'VE', 'vegetariana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -451,7 +451,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1528825871115-3581a5e31552?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-platano-venezolana.webp',
     tags: ['venezuela', 'VE', 'sin-gluten', 'ninos', 'energia'],
     free: false,
     ingredients: [
@@ -476,7 +476,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pollo-tropical-venezolana.webp',
     tags: ['venezuela', 'VE', 'sin-gluten', 'ninos', 'energia'],
     free: false,
     ingredients: [
@@ -502,7 +502,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-yuca-venezolana.webp',
     tags: ['venezuela', 'VE', 'vegetariana', 'vegana', 'sin-gluten', 'energia'],
     free: false,
     ingredients: [
@@ -527,7 +527,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-cesar-venezolana.webp',
     tags: ['venezuela', 'VE', 'ninos'],
     free: false,
     ingredients: [
@@ -553,7 +553,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-papa-venezolana.webp',
     tags: ['venezuela', 'VE', 'vegetariana', 'ninos', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -579,7 +579,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1529059997568-3d847b1154f0?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-atun-venezolana.webp',
     tags: ['venezuela', 'VE', 'sin-gluten', 'rapida', 'energia'],
     free: false,
     ingredients: [
@@ -605,7 +605,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-mixta-venezolana.webp',
     tags: ['venezuela', 'VE', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -635,7 +635,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 35,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-chuño-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten'],
     free: false,
     ingredients: [
@@ -661,7 +661,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1505576399279-0d17a6e2247c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-quinoa-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia', 'embarazo'],
     free: false,
     ingredients: [
@@ -687,7 +687,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-habas-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -713,7 +713,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-choclo-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'sin-gluten', 'ninos'],
     free: false,
     ingredients: [
@@ -738,7 +738,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-papa-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -763,7 +763,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-tomate-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -788,7 +788,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 35,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-remolacha-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -812,7 +812,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 2,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-palta-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'sin-gluten', 'rapida', 'colesterol'],
     free: false,
     ingredients: [
@@ -837,7 +837,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1505576399279-0d17a6e2247c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-tarwi-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -862,7 +862,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-mixta-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -887,7 +887,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-arroz-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten'],
     free: false,
     ingredients: [
@@ -913,7 +913,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-api-boliviana.webp',
     tags: ['bolivia', 'BO', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -943,7 +943,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-feria-panamena.webp',
     tags: ['panama', 'PA', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -968,7 +968,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-aguacate-panamena.webp',
     tags: ['panama', 'PA', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'colesterol'],
     free: false,
     ingredients: [
@@ -993,7 +993,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-papa-panamena.webp',
     tags: ['panama', 'PA', 'vegetariana', 'ninos', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -1018,7 +1018,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1529059997568-3d847b1154f0?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-mariscos-panamena.webp',
     tags: ['panama', 'PA', 'sin-gluten', 'bajar-de-peso', 'energia'],
     free: false,
     ingredients: [
@@ -1044,7 +1044,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1528825871115-3581a5e31552?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-platano-panamena.webp',
     tags: ['panama', 'PA', 'vegetariana', 'vegana', 'sin-gluten', 'energia'],
     free: false,
     ingredients: [
@@ -1069,7 +1069,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pollo-panamena.webp',
     tags: ['panama', 'PA', 'sin-gluten', 'ninos'],
     free: false,
     ingredients: [
@@ -1094,7 +1094,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1564093497595-593b96d80f8a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-frutas-panamena.webp',
     tags: ['panama', 'PA', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'ninos', 'digestion'],
     free: false,
     ingredients: [
@@ -1119,7 +1119,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-coditos-panamena.webp',
     tags: ['panama', 'PA', 'ninos'],
     free: false,
     ingredients: [
@@ -1144,7 +1144,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-frijoles-panamena.webp',
     tags: ['panama', 'PA', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -1169,7 +1169,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-verde-panamena.webp',
     tags: ['panama', 'PA', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1198,7 +1198,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-repollo-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1223,7 +1223,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-rusa-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'ninos'],
     free: false,
     ingredients: [
@@ -1248,7 +1248,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-palmito-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1272,7 +1272,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-frijoles-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -1297,7 +1297,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-chayote-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -1322,7 +1322,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pepino-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1347,7 +1347,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-verde-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1372,7 +1372,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1529059997568-3d847b1154f0?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-atun-costarricense.webp',
     tags: ['costa-rica', 'CR', 'sin-gluten', 'rapida', 'energia'],
     free: false,
     ingredients: [
@@ -1397,7 +1397,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1564093497595-593b96d80f8a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-frutas-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'ninos', 'digestion'],
     free: false,
     ingredients: [
@@ -1423,7 +1423,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-yuca-costarricense.webp',
     tags: ['costa-rica', 'CR', 'vegetariana', 'vegana', 'sin-gluten', 'energia'],
     free: false,
     ingredients: [
@@ -1452,7 +1452,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-verde-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1477,7 +1477,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 35,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-rusa-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'vegetariana', 'ninos'],
     free: false,
     ingredients: [
@@ -1502,7 +1502,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1528825871115-3581a5e31552?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-platano-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'vegetariana', 'vegana', 'sin-gluten', 'energia'],
     free: false,
     ingredients: [
@@ -1527,7 +1527,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 5,
     servings: 2,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-aguacate-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'colesterol'],
     free: false,
     ingredients: [
@@ -1552,7 +1552,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-coditos-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'ninos'],
     free: false,
     ingredients: [
@@ -1577,7 +1577,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pollo-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'ninos', 'energia'],
     free: false,
     ingredients: [
@@ -1602,7 +1602,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-habichuelas-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -1627,7 +1627,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-yuca-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'vegetariana', 'vegana', 'sin-gluten', 'energia'],
     free: false,
     ingredients: [
@@ -1652,7 +1652,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-repollo-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1677,7 +1677,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1564093497595-593b96d80f8a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-frutas-dominicana.webp',
     tags: ['republica-dominicana', 'DO', 'vegetariana', 'sin-gluten', 'rapida', 'ninos'],
     free: false,
     ingredients: [
@@ -1706,7 +1706,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 35,
     servings: 5,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-huevos-codorniz-verduras-aceitunas.webp',
     tags: ['pdf', 'sin-gluten', 'energia', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -1736,7 +1736,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pollo-lechuga-tomatitos-yogur.webp',
     tags: ['pdf', 'bajar-de-peso', 'energia'],
     free: false,
     ingredients: [
@@ -1764,7 +1764,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-crujiente-repollo-morado-rucula-tomatitos.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1791,7 +1791,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-crujiente-verduras-limon-oliva.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -1818,7 +1818,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1505576399279-0d17a6e2247c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-cremosa-pepino-yogur-menta.webp',
     tags: ['pdf', 'vegetariana', 'rapida', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -1845,7 +1845,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-lechuga-berros-remolacha-naranja.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion', 'colesterol'],
     free: false,
     ingredients: [
@@ -1872,7 +1872,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-colorida-remolacha-zanahoria-pepino.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -1898,7 +1898,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 3,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-verde-kale-remolacha.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes', 'colesterol'],
     free: false,
     ingredients: [
@@ -1922,7 +1922,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-refrescante-aguacate-lechuga-americana.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'colesterol', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -1948,7 +1948,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pasta-yogur-chimichurri-limon.webp',
     tags: ['pdf', 'vegetariana', 'ninos'],
     free: false,
     ingredients: [
@@ -1975,7 +1975,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pepino-crudo-aliñado.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'hipertension'],
     free: false,
     ingredients: [
@@ -1999,7 +1999,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 5,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1564093497595-593b96d80f8a?w=600&h=400&fit=crop',
+    image: '/images/recipes/vinagreta-pina-limon.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'digestion'],
     free: false,
     ingredients: [
@@ -2024,7 +2024,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 10,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/salpicon-cremoso-pollo-manzana-pasas.webp',
     tags: ['pdf', 'ninos', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -2052,7 +2052,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1564093497595-593b96d80f8a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-fresca-mango-kiwi-miel-citrica.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'digestion', 'energia', 'ninos'],
     free: false,
     ingredients: [
@@ -2079,7 +2079,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-refrescante-verduras-cilantro-cebollin.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion', 'diabetes'],
     free: false,
     ingredients: [
@@ -2105,7 +2105,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-repollo-morado-manzana-verde.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -2129,7 +2129,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 5,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-lechuga-fresas-palmito-tomatitos.webp',
     tags: ['pdf', 'vegetariana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -2153,7 +2153,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-kale-repollo-zanahoria-remolacha.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes', 'colesterol'],
     free: false,
     ingredients: [
@@ -2178,7 +2178,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 90,
     servings: 8,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-completa-pollo-penne-yogur.webp',
     tags: ['pdf', 'energia', 'ninos'],
     free: false,
     ingredients: [
@@ -2206,7 +2206,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1564093497595-593b96d80f8a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-picante-mango-cebolla-morada.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'digestion'],
     free: false,
     ingredients: [
@@ -2230,7 +2230,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-verduras-cocidas-aji-calabres.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes'],
     free: false,
     ingredients: [
@@ -2255,7 +2255,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-papa-aceitunas-aji.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -2279,7 +2279,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-colorida-remolacha-zanahoria-judias.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -2303,7 +2303,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-berenjena-refrescante.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -2328,7 +2328,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pollo-pasta-salsa-cremosa.webp',
     tags: ['pdf', 'ninos', 'energia'],
     free: false,
     ingredients: [
@@ -2354,7 +2354,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-brocoli-zanahoria-vapor-limon.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes', 'digestion'],
     free: false,
     ingredients: [
@@ -2378,7 +2378,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-kale-naranja-cebolla-morada.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'colesterol'],
     free: false,
     ingredients: [
@@ -2401,7 +2401,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 8,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/mayonesa-cremosa-repollo-manzana.webp',
     tags: ['pdf', 'vegetariana', 'ninos'],
     free: false,
     ingredients: [
@@ -2426,7 +2426,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-coliflor-tomate-cebolla-morada.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes'],
     free: false,
     ingredients: [
@@ -2450,7 +2450,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/vinagreta-berenjena-refrescante-picante.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -2475,7 +2475,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-crujiente-kale-lechuga-zanahoria.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'colesterol'],
     free: false,
     ingredients: [
@@ -2498,7 +2498,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-simple-zanahoria-pepino-cebolla.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes', 'digestion'],
     free: false,
     ingredients: [
@@ -2522,7 +2522,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/mayonesa-coliflor-zanahoria-pimienta.webp',
     tags: ['pdf', 'vegetariana', 'ninos'],
     free: false,
     ingredients: [
@@ -2547,7 +2547,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 45,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-ejotes-remolacha.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -2570,7 +2570,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 45,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/salteado-verduras-coloridas.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes'],
     free: false,
     ingredients: [
@@ -2595,7 +2595,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 45,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-cremosa-remolacha-mayonesa.webp',
     tags: ['pdf', 'vegetariana', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -2618,7 +2618,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-ejotes-chayote-limon-hierbas.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes', 'digestion'],
     free: false,
     ingredients: [
@@ -2642,7 +2642,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-zanahoria-limon-cebollin.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'ninos', 'digestion'],
     free: false,
     ingredients: [
@@ -2666,7 +2666,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-remolacha-pepino-lechuga.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -2691,7 +2691,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/mayonesa-yuca-tocino.webp',
     tags: ['pdf', 'sin-gluten'],
     free: false,
     ingredients: [
@@ -2716,7 +2716,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-repollo-kale-ajo-frito.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -2740,7 +2740,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-queso-minas-pimienta-cebolla.webp',
     tags: ['pdf', 'vegetariana', 'sin-gluten', 'rapida'],
     free: false,
     ingredients: [
@@ -2765,7 +2765,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-remolacha-zanahoria-tomate-fresca.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -2790,7 +2790,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1505576399279-0d17a6e2247c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-refrescante-quinoa-pdf.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia', 'embarazo'],
     free: false,
     ingredients: [
@@ -2816,7 +2816,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1564093497595-593b96d80f8a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-repollo-pina-menta.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'digestion', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -2840,7 +2840,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600&h=400&fit=crop',
+    image: '/images/recipes/mayonesa-papa-tocino.webp',
     tags: ['pdf', 'ninos'],
     free: false,
     ingredients: [
@@ -2865,7 +2865,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-colorida-refrescante-pdf.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -2891,7 +2891,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-crujiente-repollo-pepino.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'hipertension'],
     free: false,
     ingredients: [
@@ -2914,7 +2914,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 45,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pasta-rucula-tomatitos.webp',
     tags: ['pdf', 'vegetariana', 'vegana'],
     free: false,
     ingredients: [
@@ -2938,7 +2938,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 45,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-colorida-aderezo-cremoso.webp',
     tags: ['pdf', 'vegetariana', 'ninos'],
     free: false,
     ingredients: [
@@ -2964,7 +2964,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/vinagreta-calabacin-pimenton.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'diabetes'],
     free: false,
     ingredients: [
@@ -2989,7 +2989,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-refrescante-chayote-tomate.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'diabetes', 'digestion'],
     free: false,
     ingredients: [
@@ -3012,7 +3012,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-kale-mango-pepino-fresca.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'colesterol', 'diabetes'],
     free: false,
     ingredients: [
@@ -3037,7 +3037,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-huevo-codorniz-tomatito-aceituna.webp',
     tags: ['pdf', 'sin-gluten', 'rapida', 'energia'],
     free: false,
     ingredients: [
@@ -3061,7 +3061,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 6,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-crujiente-kale-remolacha-zanahoria.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -3087,7 +3087,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-zanahoria-tomate-hierbas-frescas.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'ninos'],
     free: false,
     ingredients: [
@@ -3111,7 +3111,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-remolacha-dia-verdes-frescos.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -3136,7 +3136,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-queso-minas-tomatito-aceituna.webp',
     tags: ['pdf', 'vegetariana', 'sin-gluten', 'rapida'],
     free: false,
     ingredients: [
@@ -3161,7 +3161,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600&h=400&fit=crop',
+    image: '/images/recipes/mayonesa-cremosa-brocoli-tocino.webp',
     tags: ['pdf', 'ninos', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -3185,7 +3185,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-crujiente-pepino-maiz-zanahoria.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'ninos', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -3209,7 +3209,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-remolacha-tomate-cilantro.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -3232,7 +3232,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1528825871115-3581a5e31552?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-platano-tropical-biquinho.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'energia'],
     free: false,
     ingredients: [
@@ -3255,7 +3255,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/verduras-cocidas-cilantro-cebollin.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'adultos-mayores', 'digestion'],
     free: false,
     ingredients: [
@@ -3280,7 +3280,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop',
+    image: '/images/recipes/pasta-monitos-tocino-brocoli-tomatitos.webp',
     tags: ['pdf', 'ninos', 'energia'],
     free: false,
     ingredients: [
@@ -3305,7 +3305,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-verde-cremosa-yogur.webp',
     tags: ['pdf', 'vegetariana', 'rapida', 'bajar-de-peso', 'colesterol'],
     free: false,
     ingredients: [
@@ -3329,7 +3329,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-ejotes-chayote-uvas-verdes.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -3354,7 +3354,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 20,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-cremosa-papa-pina-menta.webp',
     tags: ['pdf', 'vegetariana', 'ninos'],
     free: false,
     ingredients: [
@@ -3378,7 +3378,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 25,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-name-refrescante-nutritiva.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'energia', 'adultos-mayores'],
     free: false,
     ingredients: [
@@ -3402,7 +3402,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 510,
     servings: 4,
     difficulty: 'Media',
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-garbanzo-versatil-refrescante.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'diabetes', 'energia'],
     free: false,
     ingredients: [
@@ -3427,7 +3427,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1564093497595-593b96d80f8a?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-pina-rucula-tomatitos.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'digestion'],
     free: false,
     ingredients: [
@@ -3450,7 +3450,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 15,
     servings: 4,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-berenjena-aliñada-limon-pimienta.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
@@ -3474,7 +3474,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-calabacin-crudo-picante.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso', 'diabetes'],
     free: false,
     ingredients: [
@@ -3498,7 +3498,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 30,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-cesar-pollo-crutones-yogur.webp',
     tags: ['pdf', 'ninos', 'energia'],
     free: false,
     ingredients: [
@@ -3523,7 +3523,7 @@ export const megaRecipesPart2: Recipe[] = [
     time: 10,
     servings: 3,
     difficulty: 'Fácil',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
+    image: '/images/recipes/ensalada-colorida-mango-remolacha-pdf.webp',
     tags: ['pdf', 'vegetariana', 'vegana', 'sin-gluten', 'rapida', 'bajar-de-peso'],
     free: false,
     ingredients: [
