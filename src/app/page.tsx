@@ -46,8 +46,8 @@ export default function Home() {
           {/* Stats */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-16 animate-count-up">
             {[
-              { num: '287+', label: 'recetas' },
-              { num: '19', label: 'países' },
+              { num: '286+', label: 'recetas' },
+              { num: '12', label: 'países' },
               { num: '50,000+', label: 'personas' },
             ].map(s => (
               <div key={s.label} className="text-center">
@@ -258,7 +258,7 @@ export default function Home() {
                   </li>
                 ))}
                 {[
-                  '287+ recetas premium',
+                  '286+ recetas premium',
                   'Planificador semanal',
                   'Actualizaciones gratis',
                 ].map((item, i) => (
@@ -278,7 +278,7 @@ export default function Home() {
               <p className="text-sm text-gray-500 mb-6">Pago único · Acceso de por vida</p>
               <ul className="space-y-3 mb-8">
                 {[
-                  '287+ recetas de 19 países',
+                  '286+ recetas de 12 países',
                   'Lista de compras automática',
                   'Planificador semanal',
                   'Funciona sin internet (PWA)',
