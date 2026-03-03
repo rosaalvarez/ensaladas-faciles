@@ -15,4 +15,9 @@ export interface Recipe {
     variants?: Record<string, string>;
   }[];
   steps: string[];
+  country?: string;
+  calories?: number;
+  cookware?: string[];
+  tips?: string[];
+  mealPrep?: string;
 }

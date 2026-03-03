@@ -17,4 +17,15 @@ export const countries: Country[] = [
   { code: 'PA', name: 'Panamá', flag: '🇵🇦' },
   { code: 'CR', name: 'Costa Rica', flag: '🇨🇷' },
   { code: 'DO', name: 'Rep. Dominicana', flag: '🇩🇴' },
+  { code: 'GT', name: 'Guatemala', flag: '🇬🇹' },
+  { code: 'HN', name: 'Honduras', flag: '🇭🇳' },
+  { code: 'SV', name: 'El Salvador', flag: '🇸🇻' },
+  { code: 'NI', name: 'Nicaragua', flag: '🇳🇮' },
+  { code: 'CU', name: 'Cuba', flag: '🇨🇺' },
+  { code: 'PR', name: 'Puerto Rico', flag: '🇵🇷' },
+  { code: 'PY', name: 'Paraguay', flag: '🇵🇾' },
 ];
+
+export function getCountryByCode(code: string): Country | undefined {
+  return countries.find(c => c.code === code);
+}

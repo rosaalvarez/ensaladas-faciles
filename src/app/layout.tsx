@@ -1,12 +1,15 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import InstallBanner from '@/components/InstallBanner';
 import ServiceWorkerRegistrar from '@/components/ServiceWorkerRegistrar';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+});
 
 export const metadata: Metadata = {
   title: 'Nutre — Ensaladas Fáciles para toda Latinoamérica',
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#22c55e',
+  themeColor: '#2D8C4E',
   width: 'device-width',
   initialScale: 1,
 };
@@ -31,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="apple-touch-icon" href="/icon-192.svg" />
       </head>
-      <body className={`${inter.className} bg-white text-gray-900`}>
+      <body className={`${poppins.className} bg-white text-gray-900`}>
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

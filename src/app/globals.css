@@ -32,3 +32,14 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Primary green overrides */
+::selection {
+  background-color: #2D8C4E;
+  color: white;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2D8C4E;
+  border-color: #2D8C4E;
+}
