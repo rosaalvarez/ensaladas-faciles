@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Nutre — Ensaladas Fáciles para toda Latinoamérica',
-  description: 'Descubre 287+ recetas de ensaladas fáciles, rápidas y deliciosas adaptadas a los ingredientes de tu país. 19 países latinoamericanos.',
+  description: 'Descubre recetas de ensaladas fáciles, rápidas y deliciosas adaptadas a tu país. Más de 50,000 personas ya la usan.',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,

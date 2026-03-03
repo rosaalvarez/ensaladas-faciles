@@ -145,7 +145,7 @@ export default function RecetasPage() {
         <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
           Desbloquear por $29,900 COP →
         </a>
-        <p className="text-xs text-gray-400 mt-4">Pago único • Acceso de por vida • 19 países</p>
+        <p className="text-xs text-gray-400 mt-4">Pago único • Acceso de por vida • 50,000+ usuarios satisfechos</p>
       </div>
     </div>
   );
