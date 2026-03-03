@@ -36,3 +36,10 @@ yarn-error.log*
 next-env.d.ts
 Transforme*.pdf
 pdf-recipes-raw.txt
+generate-images.js
+generate-images.mjs
+generate-images*.log
+extract-recipes.mjs
+all-recipes.json
+AUDIT-REPORT.md
+IMAGE-LOG.md

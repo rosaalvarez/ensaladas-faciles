@@ -1,7 +1,8 @@
 'use client';
-import { useState, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { recipes } from '@/data/recipes';
 import { countries } from '@/data/countries';
+import { getCountry, setCountry as saveCountry } from '@/lib/store';
 import RecipeCard from '@/components/RecipeCard';
 
 const dietFilters = ['Todas', 'vegetariana', 'sin gluten', 'rápida', 'vegana'];
@@ -26,6 +27,17 @@ export default function RecetasPage() {
   const [activeDiet, setActiveDiet] = useState('Todas');
   const [activeCountry, setActiveCountry] = useState('');
   const [search, setSearch] = useState('');
+
+  // Sync country from localStorage on mount and listen for navbar changes
+  useEffect(() => {
+    const stored = getCountry();
+    if (stored) setActiveCountry(stored);
+    const handler = (e: Event) => {
+      setActiveCountry((e as CustomEvent).detail);
+    };
+    window.addEventListener('nutre-country-change', handler);
+    return () => window.removeEventListener('nutre-country-change', handler);
+  }, []);
 
   const filtered = useMemo(() => {
     let result = recipes;
@@ -70,7 +82,7 @@ export default function RecetasPage() {
       <div className="mb-6">
         <div className="flex flex-wrap justify-center gap-2">
           <button
-            onClick={() => setActiveCountry('')}
+            onClick={() => { setActiveCountry(''); saveCountry(''); }}
             className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${!activeCountry ? 'bg-[#2D8C4E] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
           >
             🌎 Todos
@@ -78,7 +90,7 @@ export default function RecetasPage() {
           {countries.map(c => (
             <button
               key={c.code}
-              onClick={() => setActiveCountry(activeCountry === c.code ? '' : c.code)}
+              onClick={() => { const v = activeCountry === c.code ? '' : c.code; setActiveCountry(v); saveCountry(v); }}
               className={`px-3 py-1.5 rounded-full text-sm font-medium transition flex items-center gap-1 ${activeCountry === c.code ? 'bg-[#2D8C4E] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
             >
               {c.flag} {c.name}
@@ -133,7 +145,7 @@ export default function RecetasPage() {
         <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="inline-block bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
           Desbloquear por $29,900 COP →
         </a>
-        <p className="text-xs text-gray-400 mt-4">Pago único • Acceso de por vida • 50,000+ usuarios satisfechos</p>
+        <p className="text-xs text-gray-400 mt-4">Pago único • Acceso de por vida • 19 países</p>
       </div>
     </div>
   );

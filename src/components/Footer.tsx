@@ -26,10 +26,10 @@ export default function Footer() {
             <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider text-gray-400">Enlaces</h4>
             <div className="space-y-2 text-sm">
               <Link href="/recetas" className="block text-gray-300 hover:text-white transition">Recetas</Link>
-              <Link href="#" className="block text-gray-300 hover:text-white transition">Sobre Nosotros</Link>
-              <Link href="#" className="block text-gray-300 hover:text-white transition">Contacto</Link>
-              <Link href="#" className="block text-gray-300 hover:text-white transition">Términos</Link>
-              <Link href="#" className="block text-gray-300 hover:text-white transition">Privacidad</Link>
+              <Link href="/contacto" className="block text-gray-300 hover:text-white transition">Sobre Nosotros</Link>
+              <Link href="/contacto" className="block text-gray-300 hover:text-white transition">Contacto</Link>
+              <Link href="/terminos" className="block text-gray-300 hover:text-white transition">Términos</Link>
+              <Link href="/privacidad" className="block text-gray-300 hover:text-white transition">Privacidad</Link>
             </div>
           </div>
 

@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import { countries } from '@/data/countries';
-import { recipes } from '@/data/recipes';
-import RecipeCard from '@/components/RecipeCard';
-
-const featuredRecipes = recipes.filter(r => r.free).slice(0, 6);
+import FeaturedRecipes from '@/components/FeaturedRecipes';
 
 export default function Home() {
   return (
@@ -18,14 +15,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-[#2D8C4E]/10 text-[#2D8C4E] px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in">
-                🌿 La app #1 de ensaladas en Latinoamérica
+                🌿 Ensaladas de tu país, hechas fácil
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6 animate-fade-in">
                 Ensaladas fáciles con ingredientes de{' '}
                 <span className="text-[#2D8C4E]">tu país</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 animate-fade-in">
-                Recetas paso a paso adaptadas a los ingredientes de tu región. Lista de compras automática. Más de 50,000 personas ya la usan.
+                Recetas paso a paso adaptadas a los ingredientes de tu región. Lista de compras automática y planificador semanal incluidos.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in">
                 <Link href="/recetas" className="bg-[#2D8C4E] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200 text-center">
@@ -51,7 +48,7 @@ export default function Home() {
             {[
               { num: '287+', label: 'recetas' },
               { num: '19', label: 'países' },
-              { num: '50,000+', label: 'personas' },
+              { num: '12', label: 'categorías' },
             ].map(s => (
               <div key={s.label} className="text-center">
                 <div className="text-4xl md:text-5xl font-black text-[#2D8C4E]">{s.num}</div>
@@ -84,27 +81,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PERSONALIZADA PARA TI */}
+      {/* RECETAS POR PAÍS */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Personalizada <span className="text-[#2D8C4E]">para ti</span></h2>
-          <p className="text-gray-500 mb-12 max-w-lg mx-auto">Selecciona tu país y tus preferencias. Las recetas se adaptan a los ingredientes de tu región.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Recetas de <span className="text-[#2D8C4E]">tu país</span></h2>
+          <p className="text-gray-500 mb-12 max-w-lg mx-auto">Selecciona tu país en la barra de navegación y las recetas se adaptan a los ingredientes de tu región.</p>
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
-              { name: 'María', country: '🇨🇴 Colombia', diet: 'Vegetariana', pref: 'Recetas rápidas, sin gluten', color: 'from-green-400 to-emerald-500' },
-              { name: 'Carlos', country: '🇲🇽 México', diet: 'Sin restricciones', pref: 'Meal prep, alto en proteína', color: 'from-orange-400 to-red-500' },
-              { name: 'Lucía', country: '🇦🇷 Argentina', diet: 'Vegana', pref: 'Bajar de peso, energía', color: 'from-blue-400 to-indigo-500' },
+              { flag: '🇨🇴', name: 'Colombia', recipes: '45+ recetas', example: 'Ensalada de aguacate, mango biche, patacones...', color: 'from-yellow-400 to-red-500' },
+              { flag: '🇲🇽', name: 'México', recipes: '40+ recetas', example: 'Ensalada de nopal, jícama, elote, chayote...', color: 'from-green-500 to-red-500' },
+              { flag: '🇦🇷', name: 'Argentina', recipes: '35+ recetas', example: 'Ensalada de palta, quinoa, rúcula, choclo...', color: 'from-blue-400 to-blue-200' },
             ].map(p => (
               <div key={p.name} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-left">
-                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${p.color} flex items-center justify-center text-white font-bold text-lg mb-4`}>
-                  {p.name[0]}
-                </div>
-                <h3 className="font-bold text-gray-900">{p.name}</h3>
-                <p className="text-sm text-gray-500 mb-3">{p.country}</p>
-                <div className="space-y-1 text-sm">
-                  <span className="inline-block bg-green-50 text-green-700 px-2 py-0.5 rounded-full mr-1">{p.diet}</span>
-                  <span className="inline-block bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full">{p.pref}</span>
-                </div>
+                <div className="text-4xl mb-3">{p.flag}</div>
+                <h3 className="font-bold text-gray-900 text-lg">{p.name}</h3>
+                <p className="text-sm text-[#2D8C4E] font-semibold mb-2">{p.recipes}</p>
+                <p className="text-sm text-gray-500">{p.example}</p>
               </div>
             ))}
           </div>
@@ -126,7 +118,6 @@ export default function Home() {
             <p className="text-gray-500 max-w-lg mx-auto">Organiza tus comidas de toda la semana en minutos</p>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Calendar mockup */}
             <div className="bg-gray-50 rounded-2xl p-6 shadow-sm">
               <div className="grid grid-cols-7 gap-2 text-center text-xs font-semibold text-gray-500 mb-3">
                 {['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'].map(d => (
@@ -150,7 +141,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            {/* Benefits */}
             <div>
               <ul className="space-y-4">
                 {[
@@ -174,31 +164,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIOS */}
+      {/* ¿QUÉ INCLUYE? */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">Lo que dicen nuestros <span className="text-[#2D8C4E]">usuarios</span></h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">¿Qué <span className="text-[#2D8C4E]">incluye</span>?</h2>
+          <p className="text-gray-500 text-center mb-12 max-w-lg mx-auto">Todo lo que necesitas para comer ensaladas ricas y saludables, sin complicarte.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: 'María Fernanda López', country: '🇨🇴 Bogotá', text: 'Llevo 3 meses usando Nutre y me ha cambiado la forma de comer. Las ensaladas son deliciosas y super fáciles.' },
-              { name: 'Carlos Rodríguez M.', country: '🇲🇽 CDMX', text: 'Me encanta que adapta los ingredientes a lo que encuentro aquí en México. Ya no tengo excusa para no comer sano.' },
-              { name: 'Valentina Sánchez', country: '🇦🇷 Buenos Aires', text: 'Las recetas con palta son mis favoritas 🥑 La lista de compras automática me ahorra mucho tiempo en el súper.' },
-              { name: 'Diego Paredes', country: '🇵🇪 Lima', text: 'Como chef, aprecio la calidad de las recetas. Simples pero con sabor profesional. La recomiendo a todos mis alumnos.' },
-              { name: 'Camila Reyes', country: '🇨🇱 Santiago', text: 'Bajé 5 kilos en 2 meses solo incorporando ensaladas como cena. Nutre me facilitó todo el proceso.' },
-              { name: 'Andrea Morales', country: '🇪🇨 Quito', text: 'La uso todos los días para planificar mis comidas de la semana. Es como tener una nutricionista en el bolsillo.' },
-            ].map((t, i) => (
+              { icon: '📖', title: '287+ recetas', desc: 'Organizadas por país, dieta y objetivo. Nuevas recetas cada mes.' },
+              { icon: '🛒', title: 'Lista de compras automática', desc: 'Selecciona tus ensaladas y se genera tu lista organizada por sección del supermercado.' },
+              { icon: '📅', title: 'Planificador semanal', desc: 'Organiza tus comidas de toda la semana en minutos.' },
+              { icon: '📱', title: 'Funciona sin internet', desc: 'App instalable (PWA). Consulta recetas incluso sin conexión.' },
+              { icon: '🌎', title: '19 países', desc: 'Ingredientes adaptados a lo que encuentras en tu país.' },
+              { icon: '💰', title: 'Pago único $29,900 COP', desc: 'Sin suscripciones. Pagas una vez, acceso de por vida con actualizaciones gratis.' },
+            ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 hover:shadow-md transition">
-                <div className="flex mb-1 text-yellow-400 text-sm">{'⭐'.repeat(5)}</div>
-                <p className="text-gray-700 mb-4 italic text-sm">&quot;{t.text}&quot;</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-[#2D8C4E] rounded-full flex items-center justify-center text-white font-bold text-sm">
-                    {t.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
-                  </div>
-                  <div>
-                    <div className="font-semibold text-sm text-gray-900">{t.name}</div>
-                    <div className="text-xs text-gray-500">{t.country}</div>
-                  </div>
-                </div>
+                <div className="text-4xl mb-3">{item.icon}</div>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -206,24 +189,7 @@ export default function Home() {
       </section>
 
       {/* RECETAS DESTACADAS */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Recetas <span className="text-[#2D8C4E]">destacadas</span></h2>
-            <p className="text-gray-500">Prueba estas recetas gratis y descubre lo fácil que es comer bien</p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredRecipes.map(recipe => (
-              <RecipeCard key={recipe.slug} recipe={recipe} />
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link href="/recetas" className="inline-block border-2 border-[#2D8C4E] text-[#2D8C4E] px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition">
-              Ver todas las recetas →
-            </Link>
-          </div>
-        </div>
-      </section>
+      <FeaturedRecipes />
 
       {/* LISTA DE COMPRAS */}
       <section className="py-20 bg-green-50">
@@ -260,11 +226,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PRICING */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">Gratis vs <span className="text-[#2D8C4E]">Premium</span></h2>
+          <p className="text-gray-500 text-center mb-12 max-w-lg mx-auto">Prueba gratis y decide si quieres acceso completo.</p>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Free */}
+            <div className="bg-gray-50 rounded-2xl p-8 border-2 border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Gratis</h3>
+              <p className="text-4xl font-black text-gray-900 mb-6">$0</p>
+              <ul className="space-y-3 mb-8">
+                {[
+                  '8 recetas de muestra',
+                  'Lista de compras básica',
+                  'Filtro por país',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-700">
+                    <span className="text-green-500">✓</span> {item}
+                  </li>
+                ))}
+                {[
+                  '287+ recetas premium',
+                  'Planificador semanal',
+                  'Actualizaciones gratis',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-400">
+                    <span>✗</span> {item}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/recetas" className="block text-center bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition">
+                Ver recetas gratis
+              </Link>
+            </div>
+            {/* Premium */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-[#2D8C4E] relative">
+              <div className="absolute -top-3 right-6 bg-[#2D8C4E] text-white px-3 py-1 rounded-full text-xs font-bold">RECOMENDADO</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
+              <p className="text-4xl font-black text-[#2D8C4E] mb-1">$29,900 <span className="text-lg font-normal text-gray-500">COP</span></p>
+              <p className="text-sm text-gray-500 mb-6">Pago único · Acceso de por vida</p>
+              <ul className="space-y-3 mb-8">
+                {[
+                  '287+ recetas de 19 países',
+                  'Lista de compras automática',
+                  'Planificador semanal',
+                  'Funciona sin internet (PWA)',
+                  'Actualizaciones gratis para siempre',
+                  'Nuevas recetas cada mes',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-700">
+                    <span className="text-green-500 font-bold">✓</span> {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="https://mpago.li/2TTtDgT" target="_blank" rel="noopener" className="block text-center bg-[#2D8C4E] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#246E3E] transition transform hover:scale-105 shadow-lg shadow-green-200">
+                Desbloquear todo →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA FINAL */}
       <section className="py-20 bg-gradient-to-br from-[#2D8C4E] to-[#1a6b35] text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Come mejor, sin complicarte</h2>
-          <p className="text-green-100 text-lg mb-8 max-w-lg mx-auto">Únete a más de 50,000 personas que ya descubrieron lo fácil que es comer bien.</p>
+          <p className="text-green-100 text-lg mb-8 max-w-lg mx-auto">Recetas paso a paso adaptadas a los ingredientes de tu región.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/recetas" className="bg-white text-[#2D8C4E] px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-50 transition transform hover:scale-105">
               Explorar Recetas Gratis

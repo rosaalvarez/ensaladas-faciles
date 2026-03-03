@@ -34,6 +34,8 @@ export default function Navbar() {
   const handleCountrySelect = (code: string) => {
     setSelectedCountry(code);
     saveCountry(code);
+    // Dispatch custom event so other components can react
+    window.dispatchEvent(new CustomEvent('nutre-country-change', { detail: code }));
     setCountryOpen(false);
   };
 

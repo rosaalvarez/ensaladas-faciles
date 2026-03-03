@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Nutre — Ensaladas Fáciles para toda Latinoamérica',
-  description: 'Descubre recetas de ensaladas fáciles, rápidas y deliciosas adaptadas a tu país. Más de 50,000 personas ya la usan.',
+  description: 'Descubre 287+ recetas de ensaladas fáciles, rápidas y deliciosas adaptadas a los ingredientes de tu país. 19 países latinoamericanos.',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
@@ -33,6 +33,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es">
       <head>
         <link rel="apple-touch-icon" href="/icon-192.svg" />
+        {/* spa-github-pages redirect handler */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(l){if(l.search[1]==='/'){{var decoded=l.search.slice(1).split('&').map(function(s){return s.replace(/~and~/g,'&')}).join('?');window.history.replaceState(null,null,l.pathname.slice(0,-1)+decoded+l.hash)}}}(window.location))` }} />
       </head>
       <body className={`${poppins.className} bg-white text-gray-900`}>
         <Navbar />
